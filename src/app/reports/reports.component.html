@@ -1,0 +1,9 @@
+<h2>Reports</h2>
+
+<ul *ngIf ="reports">
+  <li *ngFor="let report of reports"> 
+    <p class="product">Product: {{ report.product }}</p>
+    <p class="manufacturer">Company: {{ report.manufacturer }}</p>
+    <p class="rating">Rating: {{report.rating}}</p>
+  </li>
+</ul>
